@@ -1,0 +1,148 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: CenturyGothic;
+    color: #000 !important;
+}
+
+header {
+    /* background-image: linear-gradient(rgba(148, 103, 5, 0.5), rgba(184, 58, 8, 0.5)); */
+    height: 80vh;
+    background-size: cover;
+    position: center;
+    background-image: url('/images/background.jpg');
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+.main ul {
+    float: left;
+    list-style-type: none;
+    margin-top: 25px;
+}
+
+.main ul li {
+    display: inline-block;
+}
+
+.main ul li a {
+    text-decoration: none;
+    background-color: #FFF;
+    padding: 5px 20px;
+    border: 2px solid black;
+    transition: 0, 6;
+    margin-left: 30px;
+}
+
+.main ul li a:hover {
+    background-color: #7E6A59;
+    border-radius: 10px;
+}
+
+.logo img {
+    float: left;
+    width: 100px;
+    height: auto;
+    border-radius: 10px;
+    margin-top: 10px;
+}
+
+.main {
+    max-width: 1200px;
+    margin: auto;
+}
+
+.title {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 30px;
+}
+
+.btn {
+    text-decoration: none;
+    color: rgb(7, 30, 203);
+    padding: 5px;
+    border: 2px solid black;
+    margin-left: 30px;
+    cursor: pointer;
+    border-radius: 10px;
+    background-color: aquamarine;
+}
+
+.btn:hover {
+    background-color: aqua;
+}
+
+.title {
+    text-align: center;
+    background: linear-gradient(to right, #FFF 20%, #FF0 40%, #FF0 60%, #FFF 70%, rgb(185, 104, 5) 80%, white 100%);
+    background-size: 200% auto;
+    color: #000;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shine 3s linear infinite;
+}
+
+.content {
+    margin: 40px;
+}
+
+@keyframes shine {
+    to {
+        background-position: 200% center;
+    }
+}
+
+
+/*pop up*/
+
+#popup_box {
+    display: none;
+    position: fixed;
+    _position: absolute;
+    height: 300px;
+    width: 600px;
+    background: #FFFFFF;
+    left: 400px;
+    top: 150px;
+    z-index: 100;
+    margin-left: 15px;
+    border: 2px solid #ff0000;
+    padding: 15px;
+    font-size: 15px;
+    -moz-box-shadow: 0 0 5px #ff0000;
+    -webkit-box-shadow: 0 0 5px #ff0000;
+    box-shadow: 0 0 5px #ff0000;
+}
+
+#container {
+    background: #d2d2d2;
+    width: 100%;
+    height: 100%;
+}
+
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+#popup_box img {
+    width: 600px;
+    height: 280px;
+    border-top-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+
+#popupBoxClose {
+    font-size: 20px;
+    line-height: 15px;
+    right: 5px;
+    top: 5px;
+    position: absolute;
+    color: #6fa5e2;
+    font-weight: 500;
+    border: red 1px solid;
+}
